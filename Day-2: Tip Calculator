@@ -1,0 +1,9 @@
+bill = float(input("Net Bill amount: "))
+ppl = int(input("How many people are going to Split the Bill?\n"))
+each_amt = round(bill/ppl,2)
+tip = int(input("How much % of a tip would you like to give?\n"))
+tip/=100
+tip+=1
+net_bill = bill*tip
+amt = round(net_bill/ppl,2)
+print(F"Each person will have to pay {amt}")
